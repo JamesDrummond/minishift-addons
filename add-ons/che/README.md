@@ -29,7 +29,6 @@ The best way of using this add-on is via the [`minishift add-ons apply`](https:/
 Che default stacks require root privilege to run sshd. Without root privilege, workspaces will take more time to timeout and start.
 One workaround would be to enable the `anyuid` addon. Another way would be to [replace the existing stacks](#replace-stacks) with the ones without the `sshd` agent.
 
-    $ minishift addons install --defaults
     $ minishift addons enable anyuid
 
 Clone this repository onto your local machine and then install the add-on via:
